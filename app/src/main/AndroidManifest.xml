@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doctorconsult">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/consulticon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/consulticon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".About"
+            android:screenOrientation="locked"
+            ></activity>
+        <activity android:name=".RateApp"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Updatedoctorprofile"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Prescriptions"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Add_timting"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".ActiveAppointments"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Phistory"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".View"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Appointset"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Selecttiming"
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".DoctorDetails"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".PateintInfo"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".patient_register"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".View_Doctors"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".PatientDash"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".PatientSignin"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Mypatients"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".AppointmentRequests"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".DoctorDash"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Signin"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".SplashScreen"
+
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".DoctorInfo"
+
+            android:screenOrientation="locked"
+            />
+        <activity android:name=".Register"
+
+            android:screenOrientation="locked"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true"
+
+            android:screenOrientation="locked"
+            >
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

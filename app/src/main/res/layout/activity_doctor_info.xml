@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/thisinfo"
+    tools:context=".DoctorInfo">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="115dp"
+        android:layout_height="103dp"
+        android:src="@drawable/doc"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_image"
+        app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:backgroundTint="#1E88E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="331dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/txtname"
+            android:layout_width="293dp"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtemailinfo"
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <Spinner
+            android:id="@+id/spinnerfeild"
+            android:layout_width="288dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/feilds" />
+
+        <EditText
+            android:id="@+id/txtexp"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Experience in years or month"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Degree/Collage"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/txtdegree"
+            android:layout_width="296dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="MBBS,PHD etc"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txthphoneinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:drawableEnd="@drawable/ic_call_black_24dp"
+            android:ems="10"
+            android:hint="03| phone number"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_person_black_24dp"
+            android:text="Gender"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rdgroup"
+            android:layout_width="245dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonmale"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radioButtonfemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

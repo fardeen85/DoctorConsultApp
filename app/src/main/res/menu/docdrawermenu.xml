@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aboutdoc"
+        android:icon="@drawable/ic_announcement_black_24dp"
+        android:title="About" />
+
+    <item
+        android:id="@+id/RateAppdoc"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="RateApp"
+
+        ></item>
+
+
+    <group android:id="@+id/g1doc">
+
+        <item
+            android:id="@+id/editprofiledoc"
+            android:icon="@drawable/edit"
+            android:title="Edit profile">
+
+        </item>
+
+
+
+    </group>
+
+    <group android:id="@+id/closingdoc">
+
+
+        <item
+            android:id="@+id/logoutdoc"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+        <item
+            android:id="@+id/closedoc"
+            android:icon="@drawable/ic_close_black_24dp"
+            android:title="Close" />
+
+    </group>
+
+</menu>

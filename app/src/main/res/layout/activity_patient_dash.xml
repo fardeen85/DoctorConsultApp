@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mydrawer"
+    tools:context=".PatientDash">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_default">
+
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="234dp"
+            android:layout_height="201dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/setappointp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/setappointphone" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="224dp"
+            android:layout_height="29dp"
+            android:text="Want to set appointment??"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView34"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView34"
+            app:layout_constraintVertical_bias="0.143" />
+
+
+        <Button
+            android:id="@+id/setappointp"
+            android:layout_width="186dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="92dp"
+            android:background="#D81B60"
+            android:text="Set now"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E88E5"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/toolbarstyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="0dp"
+            android:layout_height="145dp"
+            android:background="#1E88E5"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <FrameLayout
+            android:layout_width="332dp"
+            android:layout_height="132dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView34"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.nex3z.notificationbadge.NotificationBadge
+                        android:id="@+id/badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="78dp"
+                        android:layout_marginBottom="84dp"
+                        android:background="@color/common_google_signin_btn_text_dark_default"
+                        app:nbMaxTextLength="2" />
+
+                    <ImageView
+                        android:id="@+id/phistory"
+                        android:layout_width="53dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="37dp"
+                        android:layout_marginEnd="263dp"
+                        android:layout_marginBottom="47dp"
+                        app:srcCompat="@drawable/historyicon" />
+
+                    <ImageView
+                        android:id="@+id/openprescriptions"
+                        android:layout_width="51dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="146dp"
+                        android:layout_marginBottom="45dp"
+                        app:srcCompat="@drawable/picon" />
+
+                    <ImageView
+                        android:id="@+id/viewdoctors"
+                        android:layout_width="51dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="254dp"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginBottom="42dp"
+                        app:srcCompat="@drawable/appointmentmdo" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="226dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="135dp"
+                        android:layout_marginBottom="104dp"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:text="  Patient Dashboard"
+                        android:textColor="@color/common_google_signin_btn_text_light_default"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="265dp"
+                        android:layout_marginBottom="24dp"
+                        android:text="History"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="128dp"
+                        android:layout_marginBottom="21dp"
+                        android:text="Prescriptions"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginBottom="21dp"
+                        android:text="Active "
+                        android:textAlignment="center"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/pmenu"
+        android:id="@+id/navview">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

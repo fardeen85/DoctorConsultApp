@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DoctorConsult</string>
+    <string-array name="feilds">
+
+        <item>GASTROENETE</item>
+        <item>GENERAL_PRACTITIONER</item>
+        <item>DENTIST</item>
+        <item>COUNSELLOR</item>
+        <item>VETERINARY</item>
+
+    </string-array>
+
+    <string-array name="ampm">
+        <item>-</item>
+        <item>AM</item>
+        <item>PM</item>
+
+    </string-array>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string name="Dr">Dr</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+</resources>

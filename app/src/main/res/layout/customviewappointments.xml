@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btnaccept"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="97dp"
+                android:layout_marginBottom="15dp"
+                android:background="#1E88E5"
+                android:drawableStart="@drawable/ic_check_box_black_24dp"
+                android:text="Accept"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/buttoncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:text="Remove"
+                android:textColor="@color/colorAccent"
+                tools:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txthid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="140dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="118dp"
+                android:layout_marginBottom="448dp"
+                android:drawableEnd="@drawable/ic_forum_black_24dp"
+                android:text="Request"
+                android:textAlignment="center"
+                android:textColor="#1E88E5"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btncancel"
+                android:layout_width="53dp"
+                android:layout_height="59dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="12dp"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-35dp"
+                android:layout_marginBottom="328dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="71dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="275dp"
+                    android:layout_marginBottom="23dp"
+                    android:text="Email"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="269dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="214dp"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="293dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="383dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="71dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="275dp"
+                    android:layout_marginBottom="29dp"
+                    android:text="Name"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="181dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="72dp"
+                    android:layout_marginBottom="272dp"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="293dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="271dp">
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="117dp"
+                    android:layout_height="51dp"
+                    android:layout_marginEnd="271dp"
+                    android:layout_marginBottom="19dp"
+                    android:text="Phone no"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtphone"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="69dp"
+                    android:layout_marginBottom="160dp"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="293dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="214dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="85dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="291dp"
+                    android:layout_marginBottom="102dp"
+                    android:text="Timing"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txttiming"
+                    android:layout_width="106dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="175dp"
+                    android:layout_marginBottom="110dp"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="251dp"
+                android:layout_height="49dp"
+                android:layout_above="@+id/btnaccept"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="284dp"
+                android:layout_marginEnd="81dp"
+                android:layout_marginBottom="90dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="115dp"
+                    android:layout_marginBottom="102dp"
+                    android:text="Date"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtdate"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="109dp"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="314dp"
+                android:layout_height="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="346dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="89dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="115dp"
+                    android:layout_marginBottom="102dp"
+                    android:text="Age"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtage"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="109dp"
+                    android:textColor="@color/common_google_signin_btn_text_light_default"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
